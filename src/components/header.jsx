@@ -1,5 +1,6 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
+import "../App.css";
 function Header() {
   return (
     <>
@@ -7,27 +8,71 @@ function Header() {
         <div className="center-align">
           <nav>
             <div className="logo">
-              <img src="../public/logo.png" alt="logo" />
+              <NavLink to="/">
+                <img src="../public/logo.png" alt="logo" />
+              </NavLink>
             </div>
             <div className="navbar">
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <NavLink
+                    to="/"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <NavLink
+                    to="/about"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    About
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">Causes</a>
+                  <NavLink
+                    to="/causes"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Causes
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <NavLink
+                    to="/blog"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Blog
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">Gallery</a>
+                  <NavLink
+                    to="/gallery"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Gallery
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <NavLink
+                    to="/contact"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
             </div>

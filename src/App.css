@@ -1,9 +1,14 @@
-body {
-  background-color: black;
-}
 .center-align {
-  width: 85%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* navbar  */
+header {
+  background-color: rgba(0, 0, 0, 0.24);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 nav {
   width: 100%;
@@ -11,8 +16,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
 }
-.logo > img {
+.logo img {
   width: 10rem;
 }
 
@@ -24,7 +30,109 @@ nav {
   margin: 1rem;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 2px solid white;
+  color: #5fc2ff;
+  text-shadow: none;
+}
+/* Home */
+
+.section-1 {
+  background-image: url("bg1.webp");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shapeLeft {
+  margin-top: 12.3%;
+  position: relative;
+  z-index: 1;
+}
+
+.content-main {
+  position: relative;
+  color: white;
+  bottom: 78%;
+  z-index: 3;
+  margin-left: 13rem;
+}
+.content-main h1 {
+  font-size: 6.5rem;
+  margin-bottom: 1.5rem;
+}
+.content-main p {
+  font-size: 1.3rem;
+}
+
+button {
+  color: white;
+  font-size: 18px;
+  background-color: #009dff;
+  font-weight: 500;
+  display: inline-block;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0280ce;
+}
+
+/* section 2  */
+
+.section-2 {
+  height: 80vh;
+}
+.highlight {
+  color: #009dff;
+}
+.thumb-txt {
+  width: 145px;
+  height: 58px;
+  line-height: 48px;
+  color: #061738;
+  font-weight: 700;
+  text-align: center;
+  background: url(/public/shapes/comment.png) center center/cover no-repeat
+    local;
+  text-transform: uppercase;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  justify-content: space-evenly;
+}
+.imgleft > img {
+  border-radius: 1rem;
+}
+.info1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.para-right {
+  margin-left: 5rem;
+}
+
+.info1 h1 {
+  font-size: 3rem;
+}
+.info1 p {
+  font-size: 1.3rem;
+  color: gray;
 }
