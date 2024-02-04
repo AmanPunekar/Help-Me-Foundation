@@ -24,16 +24,7 @@ function Header() {
                     Home
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="/about"
-                    exact
-                    activeClassName="active"
-                    className="nav-link"
-                  >
-                    About
-                  </NavLink>
-                </li>
+
                 <li>
                   <NavLink
                     to="/causes"
@@ -64,6 +55,16 @@ function Header() {
                     Gallery
                   </NavLink>
                 </li>
+                {/* <li>
+                  <NavLink
+                    to="/about"
+                    exact
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    About
+                  </NavLink>
+                </li> */}
                 <li>
                   <NavLink
                     to="/contact"

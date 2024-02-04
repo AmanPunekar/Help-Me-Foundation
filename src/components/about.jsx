@@ -1,7 +1,11 @@
 import React from "react";
-
+import Banner from "./banner";
 function About() {
-  return <div>About</div>;
+  return (
+    <>
+      <Banner bannerSrc="bg3.webp" style={{ width: "100vw" }} />{" "}
+    </>
+  );
 }
 
 export default About;

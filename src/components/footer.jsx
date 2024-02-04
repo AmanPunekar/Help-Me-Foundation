@@ -1,9 +1,26 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <>
+      <div style={stylefooter}>
+        <p style={{ marginBottom:"1rem" }}>
+          Terms & Condition <span style={{ color: "#009dff" }}>||</span> Privacy
+          Policy
+        </p>
+        <p>&copy; 2024 Help Me Foundation. All rights reserved</p>
+      </div>
+    </>
+  );
 }
 
-export default Footer
+const stylefooter = {
+  backgroundColor: "#011235",
+  height: "6rem",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  color: "#fff",
+};
+export default Footer;

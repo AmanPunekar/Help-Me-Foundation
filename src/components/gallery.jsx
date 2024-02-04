@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Banner from './banner'
 function Gallery() {
   return (
-    <div>Gallery</div>
+    <Banner bannerSrc="poor-boy.webp" style={{width:"100vw"}}/>
   )
 }
 

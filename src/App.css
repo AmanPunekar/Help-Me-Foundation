@@ -5,7 +5,7 @@
 
 /* navbar  */
 header {
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.397);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -20,6 +20,7 @@ nav {
 }
 .logo img {
   width: 10rem;
+  filter: drop-shadow(2px 4px 8px hsla(0deg, 0%, 0%, 0.5));
 }
 
 .navbar > ul {
@@ -93,7 +94,7 @@ button:hover {
 /* section 2  */
 
 .section-2 {
-  height: 80vh;
+  height: 85vh;
 }
 .highlight {
   color: #009dff;
@@ -113,7 +114,7 @@ button:hover {
 .about-us {
   display: flex;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 7rem;
   justify-content: space-evenly;
 }
 .imgleft > img {
@@ -135,4 +136,101 @@ button:hover {
 .info1 p {
   font-size: 1.3rem;
   color: gray;
+}
+
+/* section 3 */
+
+.section-3 {
+  height: 75vh;
+  background-color: #061738;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-graphics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.feature-graphics > div {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-graphics div img {
+  outline: 10px solid lightblue;
+  padding: 2rem;
+  border-radius: 20%;
+}
+
+/* section 4 */
+.section-4 {
+  background-color: #eefaf5;
+}
+.howto {
+  width: 75%;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.howto h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.howto p {
+  font-size: large;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.section-cause {
+  background-image: url("bg2.webp");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* blog */
+
+.blog {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.blog1,
+.blog2 {
+  padding: 1rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.blog1 h1,p {
+  margin-top: 1rem;
+}
+
+.blog2 h1,p {
+  margin-top: 1rem;
+}
+.blog1 img,
+.blog2 img {
+  border-radius: 0.5rem;
+  height:30rem;
 }
