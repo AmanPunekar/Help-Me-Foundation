@@ -4,8 +4,9 @@ import Home from "./components/home";
 import Blog from "./components/blog";
 import Causes from "./components/causes";
 import Contact from "./components/contact";
-import Gallery from "./components/gallery";
+import Gallerys from "./components/gallery";
 import "./App.css";
+import CheckoutPage from "./components/checkout";
 import Header from "./components/header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -18,9 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/causes" element={<Causes />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallerys />} />
         </Routes>
         <Footer></Footer>
       </Router>

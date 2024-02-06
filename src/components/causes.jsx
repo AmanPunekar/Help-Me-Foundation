@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 function Causes() {
   return (
     <>
@@ -15,7 +15,7 @@ function Causes() {
             their bodies.It's feeding their dreams <br /> and giving them a
             brighter, healthier future
           </p>
-          <button>Donate ₹ 30/-</button>
+          <button><NavLink to="/checkout" style={{textDecoration:"none", color:"white"}}> Donate ₹ 35/-</NavLink></button>
         </div>
       </section>
 

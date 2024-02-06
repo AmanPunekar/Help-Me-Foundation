@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,7 +17,9 @@ function Home() {
               Feed a hungry stomach and Protect the poor <br /> from
               malnutrition and starvation.
             </p>
-            <button>Donate ₹ 25/-</button>
+            <button>
+              <NavLink to="/checkout" style={{textDecoration:"none", color:"white"}}> Donate ₹ 25/-</NavLink>
+            </button>
           </div>
         </section>
         <section className="section-2">
@@ -119,7 +122,7 @@ function Home() {
               organisation through social media in serving humanity.
             </p>
             <div style={{ margin: "1rem" }}>
-              <button style={{ margin: "1rem" }}>Send Donation</button>
+             <button style={{ margin: "1rem" }}> <NavLink to="/checkout" style={{textDecoration:"none", color:"white"}}>Send Donation</NavLink></button>
               <button style={{ margin: "1rem" }}>Become Volunteer</button>
               <button style={{ margin: "1rem" }}>Share Media</button>
             </div>
