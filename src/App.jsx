@@ -9,7 +9,7 @@ import "./App.css";
 import CheckoutPage from "./components/checkout";
 import Header from "./components/header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Success  from "./components/sucess";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/causes" element={<Causes />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallerys />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
         <Footer></Footer>
       </Router>

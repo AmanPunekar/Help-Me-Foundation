@@ -4,7 +4,7 @@ import Banner from "./banner";
 function About() {
   return (
     <>
-      <Banner bannerSrc="education-banner.jpg" style={{ width: "100vw" }} />
+      <Banner bannerSrc="education-banner.jpg" />
       <div className="blog">
         <div className="blog1">
           <img

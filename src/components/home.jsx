@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { RWebShare } from "react-web-share";
 
 function Home() {
   return (
     <>
       <main>
         <section className="section-1">
-          <img src="shapes/leftside.png" alt="" className="shapeLeft" />
+         <NavLink to="/"><img src="shapes/leftside.png" alt="" className="shapeLeft" /></NavLink> 
           <div className="content-main">
             <h1>
               Feed a <br />
@@ -123,8 +124,19 @@ function Home() {
             </p>
             <div style={{ margin: "1rem" }}>
              <button style={{ margin: "1rem" }}> <NavLink to="/checkout" style={{textDecoration:"none", color:"white"}}>Send Donation</NavLink></button>
-              <button style={{ margin: "1rem" }}>Become Volunteer</button>
-              <button style={{ margin: "1rem" }}>Share Media</button>
+              <button style={{ margin: "1rem" }}><NavLink to="/contact" style={{textDecoration:"none", color:"white"}}>Become Volunteer</NavLink></button>
+              <RWebShare
+                data={{
+                    text: "Web Share - GfG",
+                    url: "http://localhost:3000",
+                    title: "Help Me Foundation",
+                }}
+                onClick={() =>
+                    console.log("shared successfully!")
+                }
+            >
+                <button style={{ margin: "1rem" }}>Share Our Story</button>
+            </RWebShare>
             </div>
           </div>
         </section>

@@ -11,7 +11,7 @@ function Banner(props) {
 }
 
 const bannerStyle = {
-  width: "100vw",
+  width: "100%",
 };
 
 export default Banner;
