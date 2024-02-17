@@ -47,7 +47,7 @@ nav {
 /* Home */
 
 .section-1 {
-  background-image: url("bg1.jpg");
+  background-image: url("https://thaagam.org/static/main/assets/images/slider/slide01.webp");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@ button:hover {
 }
 
 .section-cause {
-  background-image: url("bg2.jpg");
+  background-image: url("https://thaagam.org/static/main/assets/images/slider/slide-2.webp");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;

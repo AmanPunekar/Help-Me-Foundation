@@ -3,7 +3,7 @@ import Banner from "./banner";
 function About() {
   return (
     <>
-      <Banner bannerSrc="bg3.jpg" style={{ width: "100vw" }} />{" "}
+      <Banner bannerSrc="https://thaagam.org/static/main/assets/images/slider/slide-3.webp" style={{ width: "100vw" }} />{" "}
     </>
   );
 }
