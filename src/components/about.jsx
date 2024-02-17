@@ -3,7 +3,7 @@ import Banner from "./banner";
 function About() {
   return (
     <>
-      <Banner bannerSrc="bg3.webp" style={{ width: "100vw" }} />{" "}
+      <Banner bannerSrc="bg3.jpg" style={{ width: "100vw" }} />{" "}
     </>
   );
 }
