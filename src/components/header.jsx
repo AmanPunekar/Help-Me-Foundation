@@ -9,7 +9,7 @@ function Header() {
           <nav>
             <div className="logo">
               <NavLink to="/">
-                <img src="../public/logo.png" alt="logo" />
+                <img src="logo.png" alt="logo" />
               </NavLink>
             </div>
             <div className="navbar">
